@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_from.css">
+  <title> GYM Registration Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="div1">
+      <img src="dubble_hand.webp" alt="Changing Image" id="changeimg" width="650" height="500">
+    </div>
+    <div class="div2" id="div2">
+      <h1><i>FITNESS</i></h1> 
+      <form>
+        <fieldset id="simpledetails">
+          <legend>Registration Form</legend>
+          <div class="form-row">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="fname" placeholder="Enter first name">
+          </div>
+          <div class="form-row">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name"placeholder="Enter last name" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-no">Contact No.</label>
+            <input type="text" id="contact-no" placeholder="comntact">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="e.g abc@gmail.com">
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+          </div>
+          <div class="form-row">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm password">
+          </div>
+          <div class="form-row">
+            <button type="button" onclick="toggle()">next</button>
+          </div>
+        </fieldset>
+        <fieldset id="fitnessdetails" class="hidden">
+          <legend>Registration Form</legend>
+          <div class="form-row">
+            <label for="gender">Gender</label>
+            <div class="gender"> 
+             
+            <label for="">Male</label>
+            <input type="radio" name="first-name" >
+            <label for="">Female</label>
+            <input type="radio" name="first-name">
+            <label for="">Other</label>
+            <input type="radio" name="first-name">
+          </div>
+          </div>
+          <div class="form-row">
+            <label for="height">height in cm</label>
+            <input type="number" id="height" placeholder="e.g 166">
+          </div>
+          <div class="form-row">
+            <label for="weight">Weight in kg</label>
+            <input type="number" id="weight" placeholder="e.g 50">
+          </div>
+          <div class="form-row">
+            <label for="goal">Fitness goal</label>
+            <select name="goal" id="">
+              <option value="choose">Select</option>
+              <option value="gain">Weight loss</option>
+              <option value="muscle">Muscle gain</option>
+              <option value="General">General fitness</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="level">Fitness level</label>
+            <select name="level" id="">
+              <option value="choose">Select</option>
+              <option value="gain">Beginner</option>
+              <option value="muscle">Intermediate</option>
+              <option value="General">Advanced</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="condition">Mediacal condition</label>
+            <input type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="allergies"> Any Allergies</label>
+            <input type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="excercise">Preferred excercise type</label>
+            <select name="type" id="">
+              <option value="choose">Select</option>
+              <option value="cardio">Cardio</option>
+              <option value="strenght">Strenght training</option>
+              <option value="yoga">Yoga</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="excercise">Preferred workout time</label>
+            <select name="time" id="">
+              <option value="choose">Select</option>
+              <option value="morning">Morning</option>
+              <option value="aftenoon">Afternoon</option>
+              <option value="evening">Evening</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="excercise">Preferred workout time</label>
+            <select name="diet" id="">
+              <option value="choose">Select</option>
+              <label for="excercise">Dietary Preference</label>
+              <option value="vege"> Vegetarian</option>
+              <option value="veg">Vegan</option>
+              <option value="Gluten">Gluten-free</option>
+            </select>
+          </div>
+          <div class="from-row">
+            <label for="picture">Current full-size photo</label>
+            <input type="file" id="file" required>
+          </div>
+          <div class="from-row">
+            <label for="term">Agree to all the <a href="#">Terms & Conditions</a></label>
+            <input type="checkbox" id="checkbox" required>
+          </div>
+
+          <div class="form-row">
+            <button type="button" onclick="toggle()">Previos</button>
+          </div>
+          <div class="form-row">
+            <button type="submit" onclick="submitbtn()">Register</button>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <script src="script_from.js"></script>
+</body>
+
+</html>
