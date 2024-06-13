@@ -1,0 +1,382 @@
+body {
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: hsl(250, 9%, 20%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+    color: rgba(250, 9, 250, 0.982);
+    margin: 0;
+}
+
+.head {
+    display: flex;
+    gap: 150px;
+    margin-right: 20px;
+}
+.head1{
+    margin-left: 20px;
+}
+
+.head strong {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.head strong:hover {
+    color: rgba(250, 9, 250, 0.982);
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 100px rebeccapurple;
+}
+
+.text {
+    flex: 1 1 400px;
+    padding: 20px;
+}
+
+.text h3 {
+    color: rgba(250, 9, 250, 0.982);
+    margin-top: 0;
+}
+h3{
+    color: rgba(250, 9, 250, 0.982);
+}
+
+.text h1 {
+    margin: 10px 0;
+    animation: motionright 2s;
+}
+.text strong{
+    animation: opacity 1.5s ease-in-out alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+.text p {
+    margin: 20px 0;
+}
+
+.icon1 {
+    margin-top: 30px;
+}
+
+.icon1 p {
+    margin: 10px 0 5px;
+}
+
+.icon1 i {
+    font-size: 2rem;
+    padding: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon1 i:hover {
+    transform: scale(1.2);
+    color: rgba(250, 9, 250, 0.982);
+}
+
+.divimg {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+    padding: 20px;
+    background-image: radial-gradient(rgb(45, 43, 43),rgb(39, 35, 35));
+    opacity: 0.7;
+}
+
+.divimg img {
+    width: 500;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-image: radial-gradient(rgb(45, 43, 43),rgb(39, 35, 35));
+    transform: translateY(20px);
+    animation: motiondevimg 2s;
+    
+    
+
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .head {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .text, .divimg {
+        margin: 0;
+    }
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 100px rebeccapurple;
+}
+
+.divimg2 img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-image: radial-gradient(rgb(45, 43, 43),rgb(39, 35, 35));
+    transform: translateY(20px);
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+    opacity: 0.7;
+}
+.text2 {
+    flex: 1 1 400px;
+    padding: 20px;
+}
+.text2 button{
+    background-color:rgba(250, 9, 250, 0.982); 
+    border: 0;
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3,.1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 40px;
+    box-shadow: 0 0 100px rebeccapurple;
+}
+.container3 img{
+    width:380px;
+    height: 200px;
+}
+ 
+.container3 div:hover{
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+}
+.container3  button:hover{
+    background-color:rgba(250, 9, 250, 0.982); 
+}
+.card6{
+    display: flex;
+    justify-content: center;
+}
+.card6 button{
+    background-color:rgba(250, 9, 250, 0.982); 
+    border: 0;
+    border-radius: 10px;
+    height: 40px;
+}
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 40px;
+    box-shadow: 0 0 100px rebeccapurple;
+}
+.container4  img{
+    width: auto;
+    height: 100px;
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+
+}
+.container4  img:hover{
+     background-color: chocolate;
+     animation: scale 2s;
+
+
+}
+@keyframes  scale {
+    0%{transform: scale(1.5,1.5);}
+    
+}
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 170vh;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.div {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: slideUp 1.5s ease-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    animation: textFadeIn 2s ease-in-out;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    font-size: 1.5em;
+    color: rgba(250, 9, 250, 0.982);
+    animation: textFadeIn 2.5s ease-in-out;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(250, 9, 250, 0.982);
+}
+ 
+@keyframes motionright {
+    from{
+        transform: translateY(-300%);
+    }
+}
+@keyframes motiondevimg {
+    0%{
+        transform: translateX(300%);
+    }
+}
+@keyframes opacity {
+    100%{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0 ;
+    }
+}
+button:hover{
+    transform: scale(1.3,1.3);
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+
+}
+h2:hover{
+    box-shadow: 0 0 40px rgb(229, 225, 234);
+}
+.divimg:hover{
+    transform: scale(1.1,1.1);
+    opacity:1;
+}
+.divimg2 img:hover{
+    transform: scale(1.1,1.1);
+    opacity:1;
+}
+.container6 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 40px;
+    box-shadow: 0 0 100px rebeccapurple;
+}
+.container6 div{
+    display: inline;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+}
+.div_experience p{
+    width: 500px;
+    height: 200px;
+}
