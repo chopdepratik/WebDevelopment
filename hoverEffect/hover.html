@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 3D Animation | untoldcoding</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+   
+    <a href="#" alt="Mythrill" target="_blank">
+        <div class="card">
+            <div class="wrapper">
+                <img src="h1.jpg" onmouseover="startAudio()" onmouseout="stopAudio()" style="border-radius:10px;" class="cover-image" />
+            </div>
+            <img src="h2.jpg" style="border-radius: 30%;" class="title" />
+            <img src="h3.jpg" class="character" />
+        </div>
+    </a>
+    
+    <audio id="myAudio" controls>
+        <source src="Veer Hanumana.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        function startAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        }
+
+        function stopAudio() {
+            var audio = document.getElementById('myAudio');
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+</html>

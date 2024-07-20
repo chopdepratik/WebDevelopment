@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/chopd/OneDrive/Desktop/Systemlab/clock.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clock.css.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+               <span id="hrs">08</span>
+               <span>:</span>
+               <span id="mins">10</span>
+               <span>:</span>
+               <span id="sec">14</span>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let hrs=document.getElementById("hrs");
+        let mins=document.getElementById("mins");
+        let sec=document.getElementById("sec");
+        setInterval(()=>{
+            let currentTime= new Date();
+        hrs.innerHTML=(currentTime.getHours()<10?"0":"")+currentTime.getHours();
+        mins.innerHTML=(currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
+        sec.innerHTML=(currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
+        },1000)
+         
+    </script>
+
+</body></html>
